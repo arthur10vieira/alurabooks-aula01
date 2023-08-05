@@ -44,6 +44,7 @@
 
 .lista__menu__titulo {
     color: var(--laranja);
+    font-weight: 700;
 }
 
 .lista__menu_link {
@@ -52,4 +53,40 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
+}
+
+.container__botao__menu {
+    display: none;
+}
+
+.linhacolorida {
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(272deg, #f90000, #03f900, #0013f9, #c800f9, #daf900);
+    background-size: 1000% 1000%;
+    -webkit-animation: animado 6s ease infinite;
+    -moz-animation: animado 6s ease infinite;
+    -o-animation: animado 6s ease infinite;
+    animation: animado 6s ease infinite;
+}
+
+@-webkit-keyframes animado {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes animado {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes animado {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes animado {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
 }
