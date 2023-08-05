@@ -2,6 +2,7 @@
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .cabecalho__menu {
@@ -19,5 +20,17 @@
 }
 
 .container__imagem {
+    width: 35px;
+    height: 35px;
     padding: 1em;
+}
+
+.lista__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.container__botao__menu:checked~.lista__menu {
+    display: block;
 }
