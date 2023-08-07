@@ -90,3 +90,50 @@
     50%{background-position:100% 50%}
     100%{background-position:0% 51%}
 }
+
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .container__titulo, .container__titulo__negrito {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo__negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+        align-items: center;
+    }
+    
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    
+    .opcoes_link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente {
+        display: none !important;
+    }
+
+    .cabecalho__menu {
+        display: none;
+    }
+}
