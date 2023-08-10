@@ -55,10 +55,6 @@
     text-transform: uppercase;
 }
 
-.container__botao__menu {
-    display: none;
-}
-
 .linhacolorida {
     height: 5px;
     width: 100%;
@@ -91,15 +87,7 @@
     100%{background-position:0% 51%}
 }
 
-.container__titulo {
-    display: none;
-}
-
-.opcoes {
-    display: none;
-}
-
-.container__texto {
+.container__titulo, .opcoes, .container__texto, .container__botao__menu {
     display: none;
 }
 
