@@ -14,6 +14,10 @@
     display: inline-block;
 }
 
+.container__botao__menu:checked ~ .container__rotulo > .cabecalho__menu {
+    background-image: url("../assets/menuaberto.svg");
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -136,6 +140,24 @@
 
     .opcoes__botao {
         display: none;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
+    }
+
+    .lista__menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista__menu__item:hover > .lista__menu_link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
     }
 }
 
